@@ -1,0 +1,28 @@
+
+
+public class PlantGarden {
+
+    public static final java.lang.String[] Growth_Stages = {"Seed", "Sprout", "Mature", "Harvest Ready"};
+    public static final java.lang.String[]  PLANT_TYPES = {"Tomato","Carrot","Sunflower"};
+
+    public class Plant {
+       public String name;
+        public int age;
+        public int daysToMature;
+        public boolean watered;
+        public boolean dead;
+    }
+
+        public class Planting {
+
+        }
+
+        public class Grow {
+
+        }
+
+        public class Harvest{
+
+        }
+}
+
