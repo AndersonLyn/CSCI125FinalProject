@@ -4,6 +4,7 @@ public class PlantGarden {
 
     public static final java.lang.String[] Growth_Stages = {"Seed", "Sprout", "Mature", "Harvest Ready"};
     public static final java.lang.String[]  PLANT_TYPES = {"Tomato","Carrot","Sunflower"};
+    int[] Garden = new int[5];
 
     public class Plant {
        public String name;
@@ -12,6 +13,13 @@ public class PlantGarden {
         public boolean watered;
         public boolean dead;
     }
+        public static void main(String[] args) {
+        System.out.println("Welcome");
+        }
+
+        public class Player{
+
+        }
 
         public class Planting {
 
