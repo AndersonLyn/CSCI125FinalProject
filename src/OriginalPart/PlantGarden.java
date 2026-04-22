@@ -1,0 +1,79 @@
+package OriginalPart;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class PlantGarden {
+
+    public static final java.lang.String[] Growth_Stages = {"Seed", "Sprout", "Mature", "Harvest Ready"};
+    public static final java.lang.String[] PLANT_TYPES = {"Tomato", "Carrot", "Sunflower"};
+    int[] Garden = new int[5];
+
+    public static class Plant {
+        public String name;
+        public int age;
+        public int daysToMature;
+        public boolean watered;
+        public boolean dead;
+    }
+
+
+    public static class player {
+
+        public int[] seeds = new int[PLANT_TYPES.length];
+        public int[] harvested = new int[PLANT_TYPES.length];
+        int[] seedMaxCap = new int[seeds.length];
+
+        public player() {
+            Arrays.fill(seedMaxCap, 5); // Set max capacity
+            Arrays.fill(seeds, 3);      // Starting seeds
+        }
+
+        public void showInventory() {
+            System.out.print("\n--- Player Inventory ---");
+
+            for (int i = 0; i < PLANT_TYPES.length; i++) {
+                System.out.println(PLANT_TYPES[i] + ": Seeds=" + seeds[i] + ", Harvested=" + harvested[i]);
+            }
+        }
+
+        public boolean hasSeed(int seedIndex) {
+            return seeds[seedIndex] > 0;
+        }
+
+        public void useSeed(int seedIndex) {
+            if (seeds[seedIndex] > 0) {
+                seeds[seedIndex]--;
+            }
+        }
+
+        public boolean harvestSeed(int seedIndex) {
+            if (seeds[seedIndex] < seedMaxCap[seedIndex]) {
+                seeds[seedIndex]++;
+                harvested[seedIndex]++;
+                return true;
+            }
+            return false;
+        }
+    }
+
+    public static class Planting {
+
+    }
+
+    public static class Grow {
+
+    }
+
+    public static class Harvest {
+
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Welcome to Virtual Garden Simulator");
+        System.out.println("Please select an option: ");
+    }
+}
