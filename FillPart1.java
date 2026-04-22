@@ -8,7 +8,7 @@ import OriginalPart.*;
 
 public class FillPart1 {
 
-    // Use your partner's PlantGarden classes inside this one (or import if separate)
+    
     public static final String[] PLANT_TYPES = {"Tomato", "Carrot", "Sunflower"};
     public static final String[] GROWTH_STAGES = {"Seed", "Sprout", "Mature", "Harvest Ready"};
 
